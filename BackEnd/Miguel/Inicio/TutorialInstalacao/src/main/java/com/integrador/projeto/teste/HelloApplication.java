@@ -1,4 +1,4 @@
-package com.integrador.projeto.helloworld;
+package com.integrador.projeto.teste;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

@@ -1,4 +1,4 @@
-package com.integrador.projeto.helloworld;
+package com.integrador.projeto.teste;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
