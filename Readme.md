@@ -17,3 +17,22 @@
 [Download do Scene Builder](https://gluonhq.com/products/scene-builder/)
 
 
+- [Link para o tutorial de configuração LINUX](https://youtu.be/L0RIONQ07_8)
+
+# Imagens do site do projeto
+
+- Instalação e configuração do ambiente
+
+![Foto configuração ambiente](Assets/site1.jpeg)
+
+- Referências para os autores
+
+![Referências para os autores](Assets/site2.jpeg)
+
+- Objetivos
+
+![Objetivos](Assets/site4.jpeg)
+
+- Página inicial dos vídeos
+
+![Videos](Assets/site3.jpeg)
