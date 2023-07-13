@@ -50,3 +50,7 @@
 - DragAndDrop ✅
 - TabPanelImage ✅
 - Scroll ✅
+- TabPanes ✅
+- Images ✅
+
+- [Link para a PlayList](https://youtube.com/playlist?list=PLYLBC6nOu9HJ_F_YrYwm4JWliXdZyJFLF)
