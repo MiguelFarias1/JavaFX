@@ -15,40 +15,509 @@
     
     <nav>
       <a href="">Home</a>
-      <a href="">Inserir</a>
-      <a href="">Inserir</a>
+      <a href="instalacao.html">Instalação e Configuração</a>
+      <a href="playlist.html">Playlist</a>
     </nav>
   </header>
+
+
+<div class="botoes">
+
+  <button onclick="rolarAba('Label')">Label</button>    
+  <button onclick="rolarAba('Button')">Button</button>
+  <button onclick="rolarAba('Input Fields')">Input Fields</button>
+  <button onclick="rolarAba('Checkbox')">Checkbox</button>
+  <button onclick="rolarAba('Combobox')">Combobox</button>
+  <button onclick="rolarAba('Radio Button')">Radio Button</button>
+  <button onclick="rolarAba('Slider')">Slider</button>
+  <button onclick="rolarAba('Spinner')">Spinner</button>
+  <button onclick="rolarAba('Toggle')">Toggle</button>
+  <button onclick="rolarAba('Imagem')">Imagem</button>
+  <button onclick="rolarAba('Tabs')">Tabs</button>
+  <button onclick="rolarAba('List View')">List View</button>
+  <button onclick="rolarAba('Barra de progresso')">Barra de progresso</button>
+  <button onclick="rolarAba('Picker ou selecionador')">Picker ou selecionador</button>
+  <button onclick="rolarAba('Separadores')">Separadores</button>
+  <button onclick="rolarAba('Scroll')">Scroll</button>
+  <button onclick="rolarAba('Menu')">Menu</button>
+  <button onclick="rolarAba('Tabela com reordenação')">Tabela com reordenação</button>
+  <button onclick="rolarAba('Janela de diálogo')">Janela de diálogo</button>
+  <button onclick="rolarAba('Drag Drop')">Drag Drop</button>
+  <button onclick="rolarAba('Gráficos e animações')">Gráficos e animações</button>
+
+</div>
+
+
+<div class="introducao">
+  <img src="Imagens/JavaFX.png" width="466px" height="101px">
+  <div class="fora">
+  <p>JavaFX é uma plataforma de desenvolvimento de aplicações de interface gráfica (GUI) baseada em Java.
+    Ela fornece um conjunto de bibliotecas e ferramentas que permitem a criação de interfaces de usuário ricas e interativas para aplicativos desktop, web e móveis.
+     JavaFX substituiu a antiga biblioteca Swing como o principal framework para desenvolvimento de GUI em Java.</p>
+  
+     <p>Algumas das vantagens do JavaFX são as seguintes:</p>  </div>
+  
+     <div class="pequeno">
+  <p><b>1. Modernidade:</b> JavaFX oferece uma aparência mais moderna e esteticamente agradável em comparação com a biblioteca Swing, permitindo a criação de interfaces de usuário mais atraentes.</p>
+  <p><b>2. Facilidade de uso:</b> JavaFX utiliza uma sintaxe declarativa chamada FXML, que permite separar a estrutura da interface gráfica da lógica do programa. Isso torna o desenvolvimento mais fácil, pois facilita a manutenção e a colaboração entre desenvolvedores e designers.</p>   
+  <p><b>3. Suporte a recursos multimídia:</b> JavaFX tem suporte embutido para reprodução de áudio e vídeo, bem como para gráficos 2D e 3D. Isso permite a criação de aplicativos ricos em mídia sem a necessidade de bibliotecas externas.</p>
+  <p><b>4. Integração com a plataforma Java:</b> JavaFX é uma parte integrada da plataforma Java e, portanto, se beneficia de todo o ecossistema Java. Isso inclui acesso a bibliotecas de terceiros, suporte a várias plataformas (Windows, Mac, Linux) e interoperabilidade com outros componentes Java.</p>
+  <p><b>5. Suporte a aplicações móveis:</b> JavaFX possui uma versão chamada JavaFX Mobile, que permite o desenvolvimento de aplicativos para dispositivos móveis usando JavaFX. Isso facilita a criação de aplicativos que podem ser executados tanto em desktops quanto em dispositivos móveis.</p>
+
+</div>
+<div class="fora">
+  <p>Essas são apenas algumas das vantagens do JavaFX. No entanto, é importante mencionar que, a partir de 2023, a Oracle, a empresa por trás do Java, anunciou que o JavaFX será descontinuado como parte do pacote JDK (Java Development Kit) padrão. No entanto,
+  a comunidade JavaFX continua ativa e existem esforços para manter e evoluir o framework por meio de projetos de código aberto, como o OpenJFX.</p>
+<p>Temos aqui várias funções do JavaFX na qual listaremos logo abaixo.</p></div>
+</div>
+
   <div class="conteudo">
-  <section id='real'>
-    <h2> Keepin' it real</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim sunt delectus, reiciendis omnis laudantium animi, et nulla quidem, aliquam aliquid. A consectetur deleniti voluptates eius neque, voluptate voluptatibus nostrum!</p>
+   <div class="funcoes"> <h2>Label</h2> </div>
+   <p><h3> A função "Label" é usada para exibir texto simples em um aplicativo JavaFX. Ele permite que você insira texto estático ou dinâmico em sua interface gráfica.</h3></p>
+   <br>
+    <p><b>Passo 1:</b> Iniciar o seu IDE (Ambiente de Desenvolvimento Integrado) e criar um novo projeto JavaFX. Defina o nome do projeto e escolha o local de salvamento.</p>
+    
+    <p><b>Passo 2:</b> Importe as classes necessárias para usar o JavaFX, incluindo a classe Label. Isso pode ser feito adicionando a seguinte linha no início do seu arquivo de código-fonte</p>
+      
+    <p><b>Passo 3:</b> Declare uma variável para armazenar a instância do objeto "Label" e crie uma nova instância dele. Por exemplo:</p>
+        
+    <p>Neste exemplo, o texto "Olá, mundo!" será exibido no rótulo.
+     <p> <b>Passo 4:</b> Opcionalmente, você pode configurar várias propriedades do Label, como cor do texto, tamanho da fonte, garantida, etc. Aqui está um exemplo de como definir a cor do texto para vermelho:</p>
+     
+    <p><b>Passo 5:</b> Adição do Label à cena Depois de criar e configurar o Label, você precisa adicioná-lo à cena do seu aplicativo JavaFX. Supondo que você já tenha criado uma cena, você pode usar o método "getChildren().add()"para adicionar o Label à cena. Aqui está um exemplo:</p>
+    
+    <p><b>Passo 6:</b> Por fim, você precisa exibir a cena do seu aplicativo JavaFX. Isso pode ser feito usando um objeto "Stage" o método "show()" para exibir uma cena. Aqui está um exemplo:</p>
+    
+    <p>Certifique-se de substituir "primaryStage" pelo nome do seu objeto "Stage" ajuste as dimensões da cena conforme necessário.</p>
+<p><b>Passo 7:</b> Agora, você está pronto para executar o seu aplicativo JavaFX e ver o Label sendo exibido com o texto desejado.</p>
+<p><b>Exemplos Citados no Passo a Passo</b></p> 
+<center> <img src="Imagens/Label.png" width="70%" height="85%"></center>
+<br><br><br>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim sunt delectus, reiciendis omnis laudantium animi, et nulla quidem, aliquam aliquid. A consectetur deleniti voluptates eius neque, voluptate voluptatibus nostrum!</p>
+<div class="funcoes"> <h2>Button</h2> </div>
+    <p><h3>A função "Button" no JavaFX é utilizada para criar botões interativos em uma interface gráfica. Os botões podem ser clicados pelos usuários, e você pode associar ações ou comportamentos específicos a eles, como executar um código quando o botão é clicado.</h3></p>
+    <br>
+    <p><b>Passo 1:</b> Iniciar o seu IDE (Ambiente de Desenvolvimento Integrado) e criar um novo projeto JavaFX. Defina o nome do projeto e escolha o local de salvamento.</p>
+    <p><b>Passo 2:</b> Importando as classes necessárias No arquivo da sua classe principal, importe as seguintes classes do pacote JavaFX</p>
+        
+      <p><b>Passo 3:</b> Criando a interface do usuário Dentro do método "start()" da sua classe principal, crie um objeto do tipo "Button" e configure seu texto usando o método "setText()"":</p>
+       
+     <p> <b>Passo 4:</b> Lidando com eventos de clique Adicione um evento de clique ao botão usando o método "setOnAction()". Você pode usar uma expressão lambda ou uma classe anônima para implementar o código a ser executado quando o botão for clicado. Por exemplo:</p>
+     
+    <p><b>Passo 5:</b> Configurando o layout Crie um objeto "StackPanee" adicione o botão a ele:</p>
+    
+    <p><b>Passo 6:</b> Criando a cena Crie um objeto "Scene", passando o layout "StackPanee" as dimensões desejadas:</p>
+   
+<p><b>Passo 7:</b> Configurando o palco Configure o palco (janela) da aplicação, definindo seu título e definindo a cena criada anteriormente:</p>
+  
+<p><b>Passo 8:</b> Exibindo a aplicação Chame o método "show()" para exibir a aplicação:</p>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim sunt delectus, reiciendis omnis laudantium animi, et nulla quidem, aliquam aliquid. A consectetur deleniti voluptates eius neque, voluptate voluptatibus nostrum!</p>
+<p><b>Passo 9:</b> Executando a aplicação No método "main()" da sua classe principal, inicie a aplicação JavaFX atraiu o método "launch():</p>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim sunt delectus, reiciendis omnis laudantium animi, et nulla quidem, aliquam aliquid. A consectetur deleniti voluptates eius neque, voluptate voluptatibus nostrum!</p>
+<p>Agora você pode executar o projeto e verá uma janela com um botão. Ao clicar no botão, a mensagem "Botão clicado!" será exibida no console.</p>
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/Button.png" width="70%" height="85%"></center>
+<br><br><br>
+  
+<div class="funcoes"> <h2>Input Fields</h2> </div>
+<p><h3>A função "Input Fields" no JavaFX permite criar campos de entrada de dados interativos em uma interface gráfica. Esses campos permitem que o usuário insira valores ou textos que podem ser usados ​​posteriormente pelo programa.</h3></p>
+    <br>
+    <p><b>Passo 1:</b> Criando uma janela JavaFX Para começar, crie uma aplicação JavaFX básica com uma aplicação. Você pode fazer isso estendendo uma aula "javafx.application.Application". Implemente o método "start(Stage primaryStage)" para configurar a janela principal:</p>
+    <p><b>Passo 2:</b> Adicionando campos de entrada (Input Fields) Agora, vamos adicionar os campos de entrada à nossa janela. Existem vários tipos de campos de entrada disponíveis no JavaFX, como "TextField", "PasswordField", "TextArea", entre outros. Vamos usar um "TextFieldexemplo" neste exemplo. Adicione o código abaixo ao método "start()"":</p>
+        
+      <p><b>Passo 3:</b> Manipulando eventos Você também pode adicionar um evento para ser executado quando o conteúdo do campo de entrada for alterado. Por exemplo, podemos exibir o texto inserido no campo quando o usuário pressionou Enter. Adicione o seguinte código ao método "start():"</p>
+       
+     <p> <b>Passo 4:</b>Executando a aplicação Agora que o código está completo, você pode executar uma aplicação. Certifique-se de que uma classe "MainApp"é definida como uma classe principal (classe com o método "main()").
+       Execute o programa e você verá uma janela com um campo de entrada. Ao pressionar Enter após digitar algum texto, o texto será exibido no console.</p>
+       <p>Esse é um exemplo básico de como usar a função "Input Fields" com o JavaFX. Você pode personalizar a aparência dos campos de entrada e adicionar mais recursos conforme necessário.</p>
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/Imput Labels.png" width="70%" height="85%"></center>
+<br><br><br>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim sunt delectus, reiciendis omnis laudantium animi, et nulla quidem, aliquam aliquid. A consectetur deleniti voluptates eius neque, voluptate voluptatibus nostrum!</p>
+<div class="funcoes"> <h2>Checkbox</h2> </div>
+    <p><h3>O Checkbox é um componente gráfico que permite ao usuário selecionar ou desmarcar uma opção em uma interface de usuário. Essa função é amplamente utilizada para permitir a seleção de várias opções em uma lista ou para ativar/desativar uma configuração.</h3></p>
+    <br>
+    <p><b>Passo 1:</b> Criar um objeto Checkbox No seu código JavaFX, crie um objeto "CheckBox" utilizando o construtor padrão ou o construtor com um rótulo de texto para exibir uma opção associada ao Checkbox. Por exemplo:</p>
+    <p><b>Passo 2:</b> Adicione o Checkbox a um contêiner de layout, como "VBox" ou "HBox", ou diretamente à cena do JavaFX. Por exemplo:</p>
+        
+      <p><b>Passo 3:</b> Manipular eventos de seleção Se desejar executar alguma ação quando o Checkbox for selecionado ou desmarcado, você pode adicionar um ouvinte de eventos para isso. Por exemplo, 
+        você pode usar "checkbox.setOnAction()" para definir um código que será executado quando o estado do Checkbox for alterado. Exemplo:</p>
+       
+     <p> <b>Passo 4:</b>  Obter o estado do Checkbox Se você precisar verificar o estado atual do Checkbox em algum momento, pode usar o método "isSelected()". Ele retorna "true" se o Checkbox estiver marcado e "false" se estiver desmarcado. Exemplo:</p>
+     
+    <p><b>Passo 5:</b> Executar o aplicativo Por fim, execute o aplicativo JavaFX para visualizar o Checkbox em ação e testar sua funcionalidade.</p>
+    
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/Checkbox.png" width="70%" height="85%"></center>
+<br><br><br>
 
-  </section>
+<div class="funcoes"> <h2>Combobox</h2> </div>
+    <p><h3>O ComboBox é um componente de interface gráfica que permite aos usuários selecionar uma opção a partir de uma lista suspensa. Ele é útil quando você tem várias opções e deseja permitir que o usuário selecione uma delas.</h3></p>
+    <br>
+    <p><b>Passo 1:</b>Importando as bibliotecas necessárias. Em seu código-fonte JavaFX, importe as seguintes classes:</p>
+    <p><b>Passo 2:</b> Criando a função main e uma classe principal. Crie a função "main" para iniciar a aplicação JavaFX e uma classe principal que estenda "Application".
+       Dentro da classe principal, substitua o método "start" para construir uma interface gráfica.</p>
+        
+      <p><b>Passo 3:</b> Criando e configurando o ComboBox Dentro do método "start". Crie um objeto "ComboBox" e defina as opções disponíveis no menu suspenso.</p>
+       
+     <p> <b>Passo 4:</b>   Lidando com eventos de seleção. Se desejar executar alguma ação quando um item for selecionado no ComboBox, você pode adicionar um listener de eventos para tratar a seleção.</p>
+     
+    <p><b>Passo 5:</b> Construindo uma interface gráfica. Crie um contêiner de layout, como VBox, e adicione o ComboBox a ele.</p>
 
-  <section id='big'>
-    <h2>Go big, or go home</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim sunt delectus, reiciendis omnis laudantium animi, et nulla quidem, aliquam aliquid. A consectetur deleniti voluptates eius neque, voluptate voluptatibus nostrum!</p>
+  <p><b>Passo 6:</b>Exibindo a janela. Crie uma cena e defina o contêiner de layout como o nó raiz. Em seguida, defina a cena no palco e exiba-o.</p>  
+  <p><b>Passo 7:</b> Executando a aplicação. Agora você pode executar a aplicação JavaFX e ver o ComboBox com as opções definidas. Quando uma opção for selecionada, a mensagem correspondente será exibida no console.</p>  
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim sunt delectus, reiciendis omnis laudantium animi, et nulla quidem, aliquam aliquid. A consectetur deleniti voluptates eius neque, voluptate voluptatibus nostrum!</p>
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/Combobox.png" width="70%" height="85%"></center>
+<br><br><br>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim sunt delectus, reiciendis omnis laudantium animi, et nulla quidem, aliquam aliquid. A consectetur deleniti voluptates eius neque, voluptate voluptatibus nostrum!</p>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim sunt delectus, reiciendis omnis laudantium animi, et nulla quidem, aliquam aliquid. A consectetur deleniti voluptates eius neque, voluptate voluptatibus nostrum!</p>
+<div class="funcoes"> <h2>Radio Button</h2> </div>
+    <p><h3>O uso de Radio Buttons no JavaFX permite criar interfaces de usuário interativas e permitir que os usuários façam escolhas entre opções mutuamente exclusivas.</h3></p>
+    <br>
+    <p><b>Passo 1:</b>Crie uma nova classe JavaFX. Crie uma nova classe JavaFX que estenderá a classe "javafx.application.Application" e implementará o método "start(Stage primaryStage)".</p>
+        
+      <p><b>Passo 2:</b> Crie os Radio Buttons Dentro do método "start()"". Crie os Radio Buttons usando uma classe "javafx.scene.control.RadioButton". Você pode criar quantos Radio Buttons desejar, mas lembre-se de 
+        agrupá-los usando a classe "javafx.scene.control.ToggleGroup" para garantir que apenas uma opção seja selecionada por vez.</p>
+       
+     <p> <b>Passo 3:</b> Adicione lógica para lidar com a seleção. Agora você pode adicionar lógica para lidar com a seleção do usuário. Você pode fazer isso adicionando 
+      um "EventHandler" ao grupo de botões ou usando o método "setOnAction()" em cada botão personalizado. (Neste exemplo, estamos apenas imprimindo a opção selecionada no console. Você pode modificar o código para realizar ações diferentes com base na opção selecionada.)</p>
+     
+    <p><b>Passo 4:</b> Execute o aplicativo Agora você pode executar o aplicativo JavaFX e interagir com os botões de rádio. Quando você selecionar uma opção, a mensagem correspondente será exibida no console.</p>
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/Radio Button.png" width="70%" height="85%"></center>
+<br><br><br>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum enim sunt delectus, reiciendis omnis laudantium animi, et nulla quidem, aliquam aliquid. A consectetur deleniti voluptates eius neque, voluptate voluptatibus nostrum!</p>
 
-  </section>
-  </div>
+<div class="funcoes"> <h2>Slider</h2> </div>
+    <p><h3>O "Slider" é um componente gráfico no JavaFX que permite aos usuários selecionar um valor de um intervalo específico deslizando um controle horizontal ou vertical. Ele é frequentemente usado para ajustar configurações, como volume, brilho, tamanho de fonte, entre outros.</h3></p>
+    <br>
+    <p><b>Passo 1:</b>Importando as classes necessárias Para utilizar o "Slider". Você precisa importar as classes apropriadas. Adicione as seguintes instruções no início do seu arquivo de classe:</p>
+    <p><b>Passo 2:</b> Criando e configurando o Slider Dentro do método "start" da sua classe principal. Crie uma instância da classe "Slider" e configure-a conforme suas necessidades. 
+      Por exemplo, defina o valor mínimo e máximo, o valor inicial e a orientação do Slider. Aqui está um exemplo básico:</p>
+        
+      <p><b>Passo 3:</b> Adicionando o Slider ao layout. Crie um layout para a cena do JavaFX, como um "VBox", e adicione o Slider a ele. Por exemplo:</p>
+       
+     <p> <b>Passo 4:</b>Criando e exibindo a cena. Crie uma instância da classe "Scene" e atribua o layout a ela. Em seguida, defina a cena no palco e exiba-a. Aqui está um exemplo:</p>
+     
+    <p><b>Passo 5:</b>  Respondendo às alterações do Slider. Se você deseja executar alguma ação quando o valor do Slider é alterado, você pode adicionar um ouvinte de eventos. 
+      Por exemplo, você pode exibir o valor atual do Slider em um rótulo. Aqui está um exemplo:</p>
 
+  <p><b>Passo 6:</b>Executando o aplicativo. Por fim, você pode executar seu aplicativo JavaFX e ver o Slider em ação. Certifique-se de que sua 
+    classe principal estende a classe "Application" e inclui o método "main" para iniciar a aplicação. Aqui está um exemplo:</p>  
+  <p> Você pode personalizar ainda mais o Slider, definindo estilos, limites, etiquetas, etc., de acordo com suas necessidades.</p>  
+
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/Slider.png" width="70%" height="85%"></center>
+<br><br><br>
+
+
+<div class="funcoes"> <h2>Spinner</h2> </div>
+    <p><h3>A função "Spinner" é uma forma de entrada de dados que permite ao usuário selecionar um valor dentro de um intervalo específico. Ele exibe um campo de texto e botões de aumento e diminuição para controlar o valor selecionado.</h3></p>
+    <br>
+    <p><b>Passo 1:</b>Importação das classes necessárias No início do seu arquivo Java. Importe as classes necessárias para usar o "Spinner":</p>
+    <p><b>Passo 2:</b>  Criação do "Spinner" Dentro do método "start()" da sua classe principal. Crie um objeto "Spinner" com o tipo de valor que você deseja usar (por exemplo, "Integer", "Double", etc.): 
+    (Neste exemplo, o "Spinner" foi configurado para exibir valores inteiros entre 0 e 100, com um valor inicial de 50 e um incremento de 1.)</p>
+        
+      <p><b>Passo 3:</b> Configuração do layout. Crie um layout de contêiner para o "Spinner" e outros elementos, como um "VBox": 
+      (Neste exemplo, o "Spinner" é colocado em um "VBox" e um espaçamento de 10 pixels é adicionado às margens do VBox.)</p>
+       
+     <p> <b>Passo 4:</b>   Configuração da cena e do palco. Crie um objeto "Scene" e atribua o layout a ela. Em seguida, crie um objeto "Stage" e defina a cena como a cena principal: 
+    (Neste exemplo, uma nova cena é criada com o layout "root" e o palco é configurado com essa cena. O título da janela é definido como "Spinner Example" e a janela é exibida.)</p>
+     
+    <p><b>Passo 5:</b> Execução do aplicativo. Para executar o aplicativo adicione o seguinte código ao método "main" da sua classe principal: 
+    (Isso iniciará o aplicativo JavaFX e exibirá uma janela com o "Spinner".)</p>
+
+  <p>Agora você tem um controle Spinnerfuncional em sua aplicação JavaFX. Você pode personalizá-lo ainda mais, adicionando manipuladores de eventos para responder às alterações de valor ou ajustar sua aparência usando CSS.</p>  
+
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/Spinner.png" width="50%" height="70%"></center>
+<br><br><br>
+
+
+<div class="funcoes" id="toggle"> <h2>Toggle</h2> </div>
+    <p><h3> A função "Toggle" refere-se a um recurso que permite ao usuário alternar entre dois estados distintos, como conectado e desligado. Essa função é comumente usada em botões de alternância, caixas de seleção e interruptores.</h3></p>
+    <br>
+    <p><b>Passo 1:</b> Importar classes necessárias. Importe as seguintes classes do pacote JavaFX:</p>
+    <p><b>Passo 2:</b> Criar os botões de opção. Crie os botões de opção (RadioButtons) que serão agrupados usando uma classe "ToggleGroup".
+       Defina um texto para cada botão para representar suas opções. Por exemplo:</p>
+        
+      <p><b>Passo 3:</b>  Crie um grupo de botões de opção. Crie um objeto da classe "ToggleGroup" e adicione os botões de opção a esse grupo. Isso garante que apenas uma opção possa ser selecionada de cada vez.</p>
+       
+     <p> <b>Passo 4:</b>  Criar um contêiner para os botões de opção. Crie um contêiner, como um "VBox", para conter os botões de opção.</p>
+     
+    <p><b>Passo 5:</b> Criar uma cena e exibir uma janela. Crie uma cena com o "VBox" contendo os botões de opção e defina-a como a cena principal. Em seguida, exiba uma janela usando o "Stage".</p>
+
+  <p> Quando um dos botões de opção é selecionado, os outros botões são demarcados automaticamente. 
+    Você pode adicionar eventos aos botões de opção para executar ações específicas quando uma opção é selecionada. Isso pode ser feito usando o método "setOnAction()" em cada botão de opção.</p>   
+
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/Toggle.png" width="50%" height="70%"></center>
+<br><br><br>
+
+
+<div class="funcoes"> <h2>Imagem</h2> </div>
+    <p><h3>Essa função é utilizada para exibir imagens em aplicativos JavaFX.</h3></p>
+    <br>
+    <p><b>Passo 1:</b> Importando as classes necessárias. Abra seu arquivo Java no qual você deseja utilizar a função "Imagem" e importe as classes necessárias do JavaFX:</p>
+    <p><b>Passo 2:</b> Carregando uma imagem. Antes de exibir uma imagem, você precisa carregá-la no seu aplicativo. O JavaFX suporta vários formatos de imagem, como JPEG, PNG, GIF, entre outros. 
+      Para carregar uma imagem, você precisa especificar o caminho do arquivo ou o URL da imagem. Aqui está um exemplo: (Certifique-se de substituir "caminho/para/sua/imagem.jpg" pelo caminho real do arquivo de imagem em seu sistema.)</p>
+        
+      <p><b>Passo 3:</b> Exibindo a imagem. Agora que a imagem está carregada, você pode exibi-la em um componente visual chamado "ImageView". O "ImageViewé" responsável por exibir a imagem em uma cena. Veja o exemplo abaixo:</p>
+       
+     <p> <b>Passo 4:</b>Criando a cena e mostrando a janela Agora que você tem a imagem carregada e "ImageView" configurada, você precisa criar uma cena e mostrar a janela. Aqui está um exemplo básico para exibir uma imagem em uma janela:</p>
+
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/Imagem.png" width="50%" height="60%"></center>
+<br><br><br>
+
+
+<div class="funcoes"> <h2>Tabs</h2> </div>
+    <p><h3>As "Tabs" são componentes que permitem organizar o conteúdo em diferentes guias ou abas, onde cada aba pode conter seu próprio conjunto de controles e informações.
+       Isso é útil quando você precisa exibir diferentes conjuntos de informações ou permitir que o usuário navegue por diferentes seções de uma interface de usuário.</h3></p>
+    <br>
+    <p><b>Passo 1:</b>Importe as classes necessárias. Importe as classes necessárias para usar as abas no JavaFX. Você precisará das seguintes alternativas:</p>
+    <p><b>Passo 2:</b> Crie o conteúdo das abas. Crie o conteúdo que você deseja exibir em cada aba. Por exemplo, vamos criar duas abas com um rótulo em cada uma:</p>
+        
+      <p><b>Passo 3:</b> Crie as abas. Crie objetos Tab para representar cada aba e defina o conteúdo de cada uma delas:</p>
+       
+     <p> <b>Passo 4:</b>Crie o painel de abas. Crie um objeto "TabPane" para armazenar as abas criadas:</p>
+     
+    <p><b>Passo 5:</b> Crie uma cena e a janela principal. Crie uma cena e adicione o "TabPane" como o nó raiz da cena. Em seguida, crie uma janela principal e defina a cena como o conteúdo da janela:</p>
+
+  <p><b>Passo 6:</b>Execute o aplicativo e você verá uma janela com duas abas. Você pode alternar entre as abas clicando nelas.</p>  
+  <p>Esse é um exemplo básico de como usar a função "Tabs" no JavaFX. Você pode personalizar o conteúdo de cada aba conforme suas necessidades, adicionando outros componentes gráficos, como botões, campos de entrada, etc.</p>  
+
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/Tabs.png" width="50%" height="70%"></center>
+<br><br><br>
+
+
+
+<div class="funcoes"> <h2>List View</h2> </div>
+    <p><h3>A função "List view" é usada para exibir dados em uma lista verticalmente rolável, 
+     onde cada item da lista é exibido como uma única linha. Essa função é muito útil, você precisa exibir uma lista de itens selecionáveis ​​ e permitir que os usuários interajam com eles.</h3></p>
+    <br>
+    <p><b>Passo 1:</b> Importar as classes necessárias. Dentro da classe principal do seu projeto JavaFX, importe as classes necessárias para trabalhar com a função "List view".</p>
+    <p><b>Passo 2:</b> Criar os dados para a lista. Crie uma lista de dados que você deseja exibir no "List view". Para este exemplo, vamos criar uma lista simples de nomes.</p>
+        
+      <p><b>Passo 3:</b> Criar o "List view". Crie uma instância da classe ListViewe passe a lista de dados criada anteriormente como argumento para o construtor.</p>
+       
+     <p> <b>Passo 4:</b>  Personalizar a aparência do "List view". Você pode personalizar a aparência do "List view" definindo propriedades, como a largura e a altura preferida.</p>
+     
+    <p><b>Passo 5:</b> Adicionar o "List view" ao layout. Crie um layout, como um "VBox", e adicione o "List view" a ele.</p>
+
+  <p><b>Passo 6:</b>Criar uma cena e exibir uma janela. Crie uma instância da classe "Scene", passando o layout criado como argumento, e configure uma cena na janela principal.</p>  
+  <p><b>Passo 7:</b>Execute o aplicativo JavaFX e você verá o "List view" exibindo uma lista de dados. </p>
+  <p>Você pode personalizar ainda mais o "List view" adicionando manipuladores de eventos para lidar com a seleção de itens ou personalizando o visual dos itens da lista.</p>  
+
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/List view.png" width="60%" height="70%"></center>
+<br><br><br>
+
+
+
+<div class="funcoes"> <h2>Barra de progresso</h2> </div>
+    <p><h3>A função da barra de progresso é fornecer uma representação visual do progresso de uma tarefa.
+       Ela é frequentemente usada para exibir o status de operações longas, como carregamento de arquivos, download de dados ou processamento intensivo, para que o usuário possa acompanhar o andamento da tarefa.</h3></p>
+    <br>
+    <p><b>Passo 1:</b>  Importar classes. Importe as seguintes classes em seu código JavaFX:</p>
+    <p><b>Passo 2:</b> Criar uma barra de progresso. Crie uma instância da classe ProgressBar:</p>
+        
+      <p><b>Passo 3:</b> Definir o valor da barra de progresso. A barra de progresso no JavaFX é uma representação visual do progresso de uma tarefa.
+         Você pode definir o valor da barra de progresso usando o método "setProgress(double value)", onde "value" é um número entre 0.0 e 1.0. Por exemplo:</p>
+       
+     <p> <b>Passo 4:</b>  Adicionar uma barra de progresso ao layout. Crie um layout para adicionar a barra de progresso. Neste exemplo, usaremos um "VBox" (Vertical Box):</p>
+     
+    <p><b>Passo 5:</b>  Criar uma cena e exibir uma janela. Crie uma instância da classe Scene, passe o layout como parâmetro e defina a cena na janela principal:</p>
+
+  <p><b>Passo 6:</b> Executar a aplicação. Crie uma classe que estenda Application e implemente o método "start(Stage primaryStage)". Dentro desse método, adicione o código para exibir uma janela com a barra de progresso:</p>  
+  
+  <p>Você pode personalizar a aparência da barra de progresso, adicionar eventos ou utilizar em conjunto com outras funcionalidades do JavaFX para criar uma interface mais avançada.</p>  
+
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/Barra_de_progresso.png" width="70%" height="85%"></center>
+<br><br><br>
+
+
+<div class="funcoes"> <h2>Picker ou selecionador</h2> </div>
+    <p><h3>A função "Picker" ou "selecionador" é útil para permitir que os usuários selecionem facilmente informações específicas, como dados, arquivos, cores e horários, em uma interface gráfica. Esses componentes 
+      fornecem uma maneira intuitiva de interagir com o aplicativo, facilitando a entrada de dados e a seleção de opções relevantes.</h3></p>
+    <br>
+    <p><b>Passo 1:</b> Importações necessárias: Certifique-se de ter as seguintes normas no início do seu código JavaFX:</p>
+    <p><b>Passo 2:</b> Criação dos componentes: Crie os componentes necessários para cada tipo de selecionador que você deseja utilizar. No exemplo, criamos um "DatePicker", um "FileChooser", um "ColorPicker" e um "TimePicker":</p>
+        
+      <p><b>Passo 3:</b> Configuração dos componentes: Personalize os componentes conforme necessário, definindo propriedades ou ouvindo eventos. Por exemplo, você pode definir um valor inicial para o "DatePicker":</p>
+       
+     <p> <b>Passo 4:</b> Manipulando o "FileChooser": Para exibir um diálogo de seleção de arquivo ao clicar em um botão, você precisa configurar o "FileChooser". Por exemplo, você pode definir o título da janela e filtrar as extensões de arquivo permitidas:</p> 
+     <p><b>Passo 5:</b> Exibindo os componentes: Crie um layout, como "VBox", e adicione os componentes a ele:</p> 
+     <p><b>Passo 6:</b> Criando a cena e exibindo a janela: Crie uma cena com o layout "VBox" e mostre a janela principal:</p>
+
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/Picker.png" width="60%" height="70%"></center>
+<br><br><br>
+
+
+
+<div class="funcoes"> <h2>Separadores</h2> </div>
+    <p><h3>A função "Separadores" no JavaFX refere-se ao uso de diferentes tipos de separadores para dividir visualmente elementos em uma interface gráfica. Esses separadores podem ser úteis para organizar e melhorar a legibilidade de um layout.</h3></p>
+    <br>
+    <p><b>Passo 1:</b>Criação do layout da interface: No arquivo gráfico FXML ou no código Java que representa a interface gráfica, defina um layout, como "VBox", "HBox" ou "GridPane", onde você deseja adicionar os separadores.
+       Esses layouts fornecem uma estrutura para organizar os elementos da interface.</p>
+    <p><b>Passo 2:</b>  Importação de classes JavaFX: Importe as classes necessárias do pacote JavaFX para utilizar os separadores. No topo do seu arquivo Java, adicione a seguinte linha:</p>
+        
+      <p><b>Passo 3:</b>Adição de separadores ao layout: Dentro do seu layout, crie instâncias da classe Separator e add-as onde deseja que os separadores sejam exibidos. Você pode definir diferentes tipos de separadores,
+         como horizontal (para separação vertical de elementos) ou vertical (para separação horizontal de elementos). A classe Separator possui dois construtores principais:</p>
+      <p>"Separator()": Cria um separador horizontal.</p> 
+      <p>"Separator(Orientation orientation)"": Cria um separador com orientação especificada (horizontal ou vertical).</p>
+      <p>Aqui está um exemplo de como adicionar um separador horizontal a um VBox:</p>
+     <p> <b>Passo 4:</b> Personalização dos separadores (opcional): Se desejar personalizar a aparência dos separadores, você pode modificar suas propriedades. Por exemplo, 
+      é possível definir a cor, a largura ou a espessura do separador. Um separador de classe possui métodos para acessar e modificar essas propriedades.</p> 
+     <p><b>Passo 5:</b>  Execução do projeto: Execute o projeto JavaFX e verifique a interface gráfica para visualizar os separadores adicionados.</p> 
+  
+
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/Separadores.png" width="65%" height="80%"></center>
+<br><br><br>
+
+
+<div class="funcoes"> <h2>Scroll</h2> </div>
+    <p><h3>A função "ScrollPane" do JavaFX é usada para fornecer uma área rolável para um conteúdo maior do que a área visível. Ela é útil quando você tem um grande conjunto de elementos e deseja exibi-los em uma janela menor.
+       A função ScrollPane cria barras de rolagem automaticamente para permitir que o usuário role o conteúdo e visualize todo o seu conteúdo.</h3></p>
+    <br>
+    <p><b>Passo 1:</b> Importando as classes necessárias: Para usar a função de rolagem (scroll) no JavaFX, você precisa importar as seguintes classes no seu código:</p>
+    <p><b>Passo 2:</b> Criando o conteúdo da janela: Crie o conteúdo da janela que será rolado. Para este exemplo, usaremos um "VBox" que conterá vários "Label":</p>
+        
+      <p><b>Passo 3:</b>A Criando o objeto ScrollPane: Crie um objeto "ScrollPanee" defina o conteúdo a ser rolado usando o método "setContent()":</p>
+      
+     <p> <b>Passo 4:</b>  Configurando o tamanho do ScrollPane: Defina o tamanho desejado "ScrollPane" usando os métodos "setPrefWidth()" e "setPrefHeight()".
+       Certifique-se de que o conteúdo seja maior do que o tamanho do "ScrollPane" para que a rolagem seja ativada.</p> 
+     <p><b>Passo 5:</b>   Criando a cena e adicionando o ScrollPane Crie uma cena do JavaFX e adicione o "ScrollPane" a ela:</p>
+  
+     <p><b>Passo 6:</b> Configurando a janela principal: Configure a janela principal da aplicação, definindo o título e a cena:</p>
+
+     <p><b>Passo 7:</b> a aplicação Finalmente, inicie a aplicação JavaFX chamando o método "launch()" principal da aplicação, que deve estender "Application":</p>
+
+     <p><b>Passo 8:</b> o ScrollPane: Execute o programa e você verá um "ScrollPane" com o conteúdo dentro dele. Se o tamanho do conteúdo for maior do que o tamanho do "ScrollPane", você poderá rolar o conteúdo usando as barras de rolagem.</p>
+
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/Scroll.png" width="60%" height="85%"></center>
+<br><br><br>
+
+
+
+<div class="funcoes"> <h2>Menu</h2> </div>
+    <p><h3>O "Menu" é uma classe que faz parte do pacote JavaFX e permite criar menus com itens de menu clicáveis. É comumente usado para criar barras de menu em aplicativos de desktop. </h3></p>
+    <br>
+    <p><b>Passo 1:</b> Criando um objeto MenuBar: Comece criando um objeto "MenuBar" no seu arquivo FXML ou diretamente no código Java. O "MenuBar" é o contêiner principal para os menus.</p>
+    <p><b>Passo 2:</b>Criando menus Agora, você pode criar menus dentro do "MenuBar". Utilize uma aula "Menupara" isso.</p>
+        
+      <p><b>Passo 3:</b>Adicionando itens de menu Dentro de cada menu, você pode adicionar itens de menu. Use uma classe "MenuItem" para criar os itens.</p>
+      
+     <p> <b>Passo 4:</b> Definindo a ação dos itens de menu Agora, você precisa definir a ação que será executada quando os itens de menu forem clicados. Isso é feito adicionando um "EventHandler" para cada item de menu.</p> 
+     <p><b>Passo 5:</b> Adicionando os itens de menu aos menus Após definir os itens de menu e suas ações, você pode adicioná-los aos menus correspondentes.</p>
+  
+     <p><b>Passo 6:</b>Adicionando os menus à barra de menu Por fim, você pode adicionar os menus criados à barra de menu.</p>
+
+     <p><b>Passo 7:</b>  Exibindo a barra de menu Para exibir a barra de menu, você precisa adicioná-la à cena do seu aplicativo.</p>
+
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/Menu.png" width="70%" height="75%"></center>
+<br><br><br>
+
+
+<div class="funcoes"> <h2>Tabela com reordenação</h2> </div>
+    <p><h3>A função "Tabela com reordenação" em JavaFX se refere à capacidade de reordenar as colunas de uma tabela em tempo de execução. Isso permite que os usuários personalizem a exibição da tabela, arrastando e soltando as vozes em posições diferentes.  </h3></p>
+    <br>
+    <p><b>Passo 1:</b>  Criação da classe principal: Crie uma classe principal que estenda a classe Application. Essa classe será responsável por iniciar a aplicação JavaFX.</p>
+    
+    <p><b>Passo 2:</b>Configuração da tabela: Dentro do método "start()", você precisa configurar a tabela e suas colunas. A classe "TableView" é usada para criar uma tabela e cada classe "TableColumn" para criar as colunas.</p>
+      
+    <p>Certifique-se de substituir "Item" pelo nome da classe que representa os dados exibidos na tabela. Além disso, defina as propriedades "nome" e "quantidade" para corresponder aos nomes dos atributos na classe "Item".</p>
+      
+    <p><b>Passo 3:</b> Habilitação da reordenação de colunas: Para habilitar a reordenação de colunas, adicione o seguinte código após a criação da tabela:</p>
+     
+      <p>O método "setColumnResizePolicy()" é usado para permitir que as colunas sejam redimensionadas quando a largura da tabela for alterada. O método "setReorderable()" é usado para permitir a reordenação das colunas.</p>
+     
+     <p> <b>Passo 4:</b>Executando a aplicação: Agora que a configuração da tabela com reordenação está completa, você pode executar uma aplicação JavaFX e testar a funcionalidade de reordenação das colunas.</p> 
+
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/Tabela_reordenacao.png" width="70%" height="85%"></center>
+<br><br><br>
+
+
+
+<div class="funcoes"> <h2>Janela de diálogo</h2> </div>
+    <p><h3>A função "Janela de diálogo" no JavaFX é uma maneira de exibir informações ou solicitações de entrada do usuário em uma janela pop-up. Ela permite exibir mensagens, alertas, confirmar ações e receber entrada do usuário de forma fácil e intuitiva. </h3></p>
+    <br>
+    <p><b>Passo 1:</b>Importação de pacotes: Para utilizar a função "Janela de diálogo" no JavaFX, você precisará importar os seguintes pacotes:</p>
+  
+    <p>Esses pacotes fornecem classes necessárias para exibir diferentes tipos de janelas de diálogo.</p>
+
+    <p><b>Passo 2:</b> Exibindo uma mensagem simples: Para exibir uma mensagem simples em uma janela de diálogo, você pode usar uma classe "Alert". Veja o exemplo abaixo:</p>
+       
+    <p>Nesse exemplo, uma janela de diálogo será exibida com um ícone de informação, um título e uma mensagem informativa.</p>
+
+      <p><b>Passo 3:</b> Exibindo um alerta: Se você deseja exibir um alerta de aviso, pode usar a classe "AlertType.WARNING". Veja o exemplo:</p>
+      <p>Nesse exemplo, uma janela de diálogo será exibida com um ícone de aviso, um título e uma mensagem de aviso.</p>
+      
+     <p> <b>Passo 4:</b>Exibindo uma caixa de diálogo de confirmação Se você deseja solicitar uma confirmação do usuário, pode exibir uma caixa de diálogo de confirmação usando a classe "AlertType.CONFIRMATION". Veja o exemplo.</p> 
+     <p><b>Passo 5:</b>Recebendo entrada do usuário Se você precisa receber entrada do usuário, pode usar a classe "TextInputDialog". Veja o exemplo:</p>
+  
+
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/Janela_dialogo.png" width="60%" height="75%"></center>
+<br><br><br>
+
+
+<div class="funcoes"> <h2>Drag Drop</h2> </div>
+    <p><h3>A função "Drag and Drop" (Arrastar e Soltar) no JavaFX permite que os usuários arrastem elementos de uma parte da interface gráfica para outra.
+       Essa funcionalidade é útil em aplicativos onde você deseja permitir que os usuários movam ou copiem elementos arrastando-os de um lugar para outro. </h3></p>
+    <br>
+    <p><b>Passo 1:</b>  Configurar o objeto a ser arrastado: Primeiro, você precisa configurar o objeto que será arrastado.
+       Isso geralmente envolve a criação de um objeto gráfico, como um nó (Node) ou uma imagem (ImageView), e definir suas propriedades, como tamanho, posição e comportamento de arrastar e soltar. Por exemplo:</p>
+    
+    <p>Nesse exemplo, estamos usando um ImageView como o objeto a ser arrastado. Definimos um evento "setOnDragDetected" no ImageView para iniciar o processo de arrastar quando o usuário clicar e segurar o botão do mouse. 
+      Em seguida, criamos um Dragboard (um objeto que contém o conteúdo do arraste) usando o método "startDragAndDrop" e definimos o modo de download como "TransferMode.COPY". Em seguida, criamos um ClipboardContent (conteúdo da área de download) e adicionamos uma imagem ao conteúdo. Por fim, definimos o conteúdo do Dragboard usando o método "setContent".</p>
+     
+      <p><b>Passo 2:</b> Configurar a área de destino: Em seguida, você precisa configurar a área de destino, onde o objeto será solto. Isso geralmente envolve a definição de eventos de arrastar e soltar na área de destino e a implementação do código que lida com o objeto sendo solto. Por exemplo:</p>
+       
+      <p>Nesse exemplo, estamos usando um Pane como a área de destino. Definimos um evento "setOnDragOver" no Pane para permitir que o objeto seja solto na área, verificando se o objeto sendo arrastado contém uma imagem 
+        (outras verificações também podem ser feitas dependendo dos requisitos do seu aplicativo). Em seguida, siga o método "acceptTransferModes" para aceitar os modos de transferência (neste caso, "TransferMode.COPY_OR_MOVE").</p>
+      
+      <p>Também definimos um evento "setOnDragDropped" no Pane para lidar com o objeto sendo solto. Dentro desse evento, verificamos se o Dragboard contém uma imagem e,
+         em seguida, criamos um novo ImageView usando essa imagem e definimos sua posição na área de destino. Por fim, adicionamos o ImageView ao Pane e definimos a variável "success" como verdadeira para indicar que o objeto foi solto com sucesso.</p>
+       
+         <p><b>Passo 3:</b>Adicionar os objetos à cena: Por fim, você precisa adicionar os objetos configurados à cena do JavaFX para que sejam exibidos. Por exemplo:</p>
+      
+     <p>Nesse exemplo, estamos criando uma nova cena do JavaFX que contém um VBox com o objeto a ser arrastado (imageView) e a área de destino (dropPane).
+       Em seguida, configuramos a cena para o palco principal (primaryStage) e exibimos o palco usando o método "show()".</p> 
+     
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/Drag_drop.png" width="70%" height="85%"></center>
+<br><br><br>
+
+
+
+<div class="funcoes"> <h2>Gráficos e animações</h2> </div>
+    <p><h3>A função "Gráficos e Animações" no JavaFX permite criar gráficos interativos e animações em aplicativos Java. Com ela, você pode exibir dados de forma visualmente atraente, criar efeitos de transição e animações de elementos de interface do usuário.</h3></p>
+    <br>
+    <p><b>Passo 1:</b> Criar uma janela: Crie uma janela principal para o seu aplicativo JavaFX. Isso pode ser feito estendendo a classe "javafx.application.Application" e substituindo o método "start()"". Dentro do método "start()", você deve configurar a cena principal e exibir uma janela.</p>
+    <p><b>Passo 2:</b>Adicionar um gráfico: Agora você pode adicionar um gráfico à cena principal. O JavaFX fornece várias classes de gráficos, como "LineChart", "BarChart" e "PieChart". Escolha o tipo de gráfico que deseja usar e crie uma instância dele.</p>
+        
+      <p><b>Passo 3:</b> Adicionar animações: Agora vamos adicionar uma animação ao nosso gráfico. O JavaFX fornece várias classes de animação, como "TranslateTransition", "ScaleTransition" e "FadeTransition". Escolha o tipo de animação que deseja usar e crie uma instância dele.</p>
+      
+     <p> Neste exemplo, estamos criando uma transição de tradução que move o nó do gráfico horizontalmente por 100 pixels em 2 segundos. A transição será repetida indefinidamente e o nó retornará à posição original a cada ciclo.</p> 
+     <p><b>Passo 5:</b>: Executar o aplicativo: Agora você pode executar o aplicativo e ver o gráfico com a animação em ação.</p>
+
+<p><b>Exemplos citados no Passo a Passo</b></p>
+<center> <img src="Imagens/grafico_animacoes.png" width="70%" height="85%"></center>
+<br>
+
+
+</div>
+
+  
   <footer id="myFooter">
     <div class="container">
         <div class="row">

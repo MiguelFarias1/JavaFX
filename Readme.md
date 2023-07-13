@@ -6,7 +6,6 @@
 - Além disso, uma ótima opção de IDE para desenvolvimento Java é o IntelliJ IDEA. Ele fornece um ambiente de desenvolvimento completo com recursos avançados. Você pode fazer o download do IntelliJ IDEA no site oficial da JetBrains:
 [Download do IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
 
-
 - Se você preferir uma alternativa ao IntelliJ IDEA, outra opção popular para desenvolvimento Java é o Visual Studio Code (VSCode). Ele é uma IDE leve e altamente personalizável. Você pode baixar o VSCode em seu site oficial:
 [Download do Visual Studio Code](https://code.visualstudio.com/download)
 
@@ -15,7 +14,6 @@
 
 - O Scene Builder é uma ferramenta gráfica para criar interfaces de usuário JavaFX. Ele oferece uma interface intuitiva para projetar e construir layouts de aplicativos JavaFX. Você pode fazer o download do Scene Builder no site oficial:
 [Download do Scene Builder](https://gluonhq.com/products/scene-builder/)
-
 
 - [Link para o tutorial de configuração LINUX](https://youtu.be/L0RIONQ07_8)
 
