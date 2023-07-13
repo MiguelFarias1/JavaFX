@@ -56,5 +56,7 @@
 - Scroll ✅
 - TabPanes ✅
 - Images ✅
+- Dialog Pane ✅
+- Alerts ✅
 
 - [Link para a PlayList](https://youtube.com/playlist?list=PLYLBC6nOu9HJ_F_YrYwm4JWliXdZyJFLF)
