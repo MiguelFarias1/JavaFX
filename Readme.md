@@ -19,6 +19,10 @@
 
 # Imagens do site do projeto
 
+- Página inicial 
+
+![Foto página inicial](Assets/JavaFXSite.jpeg)
+
 - Instalação e configuração do ambiente
 
 ![Foto configuração ambiente](Assets/site1.jpeg)
