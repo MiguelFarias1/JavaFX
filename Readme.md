@@ -34,3 +34,19 @@
 - Página inicial dos vídeos
 
 ![Videos](Assets/site3.jpeg)
+
+# Tópicos
+
+- Label ✅
+- Input Field ✅
+- Button ✅
+- ComboBox ✅
+- ListView ✅
+- Picker ✅
+- Barra de progresso ✅
+- RadioButton ✅
+- Separadores ✅
+- Slider ✅
+- DragAndDrop ✅
+- TabPanelImage ✅
+- Scroll ✅
