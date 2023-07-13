@@ -37,7 +37,7 @@
 
 - Página inicial dos vídeos
 
-![Videos](Assets/site3.jpeg)
+![Videos](Assets/VideosSite.jpeg)
 
 # Tópicos
 
